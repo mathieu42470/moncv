@@ -1,0 +1,159 @@
+body{
+	width: 100%;
+}
+.pageaccueil{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(0,0%,100%,.9);
+	animation: loader .01s;
+	animation-delay: 1.75s;
+	animation-fill-mode: both;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@keyframes loader{
+	100%{
+	      opacity: 0;
+	      z-index: -10;
+	}
+}
+.animation{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	font-size: 45px;
+}
+.bienvenue{
+	animation: fadein 0s;
+	width: 100%;
+}
+@keyframes fadein{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.surlecv{
+	animation: fadein 4s;
+	width: 100%;
+}
+@keyframes fadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.de{
+	animation: fadein 8s;
+	width: 100%;
+}
+@keyframes fadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+main
+{
+	position: relative;
+	background-color:white;
+}
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1
+{
+	display: flex;
+	justify-content: center;
+	width: 20%;
+	border: 2px black solid;
+	border-radius: 20px;
+}
+.partieexperience{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.experience{
+	display: flex;
+	flex-direction: column;
+	border: 1px black solid;
+	border-radius: 20px;
+	margin: 4%
+}
+h2
+{
+	font-style: italic;
+	padding-left: 5%;
+}
+.menuexperience{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.compétence{
+	display: flex;
+	flex-direction: column;
+	border: 1px black solid;
+	border-radius: 20px;
+	margin: 4%
+}
+.menucompetence{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.formation{
+	display: flex;
+	flex-direction: column;
+	border: 1px black solid;
+	border-radius: 20px;
+	margin: 4%
+}
+.menuformation{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.contact{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+}
+.mail{
+	border: 2px black solid;
+	border-radius: 20px;
+	width: 8%;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.facebook{
+	border: 2px black solid;
+	border-radius: 20px;
+	width: 8%;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+@media screen and (max-widht: 1024px)
+{
+	#liseret
+	       {
+		display: none;
+	       }
+}
